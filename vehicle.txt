@@ -1,0 +1,17 @@
+id_car                 SMALLINT         AUTO_INCREMENT  PRIMARY KEY
+car_brand              VARCHAR(50)      NOT_NULL
+car_model              VARCHAR(100)     NOT_NULL
+first_registration     DATE             NULL
+mileage                SMALLINT         UNSIGNED        NULL
+fuel_type              VARCHAR(50)      NULL
+gearbox                VARCHAR(50)      NULL
+color                  VARCHAR(255)     NULL
+price_paid             FLOAT(10,2)      UNSIGNED        NOT_NULL
+vending_price          FLOAT(11,2)      UNSIGNED        NOT_NULL
+description            TEXT             NULL
+plate                  VARCHAR(9)       NULL            UNIQUE
+chassis_number         VARCHAR(17)      NOT_NULL        UNIQUE
+nr_of_seats            TINYINT          UNSIGNED        NULL
+nr_of_doors            TINYINT          UNSIGNED        NULL
+nr_of_previous_owners  TINYINT          UNSIGNED        NULL
+Availability           BOOLEAN          NOT_NULL        DEFAULT (TRUE)
